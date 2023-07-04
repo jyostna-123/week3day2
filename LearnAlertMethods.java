@@ -19,18 +19,18 @@ public class LearnAlertMethods {
 		
 		//	Simple Alert
 		
-		//@SuppressWarnings("unused")
-		//Alert Simple=driver.switchTo().alert();
-		//@SuppressWarnings("unused")
-		//String text=Simple.getText();
-		//System.out.println(text);
-		//Simple.accept();
+		@SuppressWarnings("unused")
+		Alert Simple=driver.switchTo().alert();
+		@SuppressWarnings("unused")
+		String text=Simple.getText();
+		System.out.println(text);
+		Simple.accept();
 		
 		//Confirm Alert
-		//driver.findElement(By.xpath("(//span[text()='Show'])[2]")).click();
-		//Alert Confirm=driver.switchTo().alert();
-		//Confirm.sendKeys(text);
-		//Confirm.dismiss();
+		driver.findElement(By.xpath("(//span[text()='Show'])[2]")).click();
+		Alert Confirm=driver.switchTo().alert();
+		Confirm.sendKeys(text);
+		Confirm.dismiss();
 		
 		//Prompt Alert
 		Alert prompt=driver.switchTo().alert();
@@ -42,9 +42,9 @@ public class LearnAlertMethods {
 				
 		//Sweet Alert
 
-				//driver.findElement(By.xpath("(//span[text()='Show'])[3]")).click();
-				//Thread.sleep(2000);
-				//driver.findElement(By.xpath("//span[text()='Dismiss']")).click();
+				driver.findElement(By.xpath("(//span[text()='Show'])[3]")).click();
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//span[text()='Dismiss']")).click();
 	}
 
 }
